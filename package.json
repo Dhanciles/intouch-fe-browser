@@ -1,5 +1,6 @@
 {
   "name": "intouch-fe-browser",
+  "homepage": "https://Dhanciles.github.io/intouch-fe-browser",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,12 +16,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject", 
-    "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
-      "react-app", 
+      "react-app",
       "airbnb"
     ]
   },
@@ -33,6 +35,7 @@
   "devDependencies": {
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
-    "eslint-config-airbnb": "^17.1.0"
+    "eslint-config-airbnb": "^17.1.0",
+    "gh-pages": "^2.0.1"
   }
 }
