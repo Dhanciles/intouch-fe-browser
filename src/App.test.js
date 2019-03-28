@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import App from './App';
-import { shallow } from 'enzyme'; 
 
 describe('App', () => {
-  let wrapper; 
+  let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />)
-  })
+    wrapper = shallow(<App />);
+  });
 
   it('should match snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
+    expect(wrapper).toMatchSnapshot();
+  });
+});
